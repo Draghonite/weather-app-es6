@@ -2,10 +2,18 @@
   "name": "weather-app-es6",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
+    "start": "node app.js",
+    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ivan Mercedes",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7"
+  }
 }
