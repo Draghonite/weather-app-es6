@@ -9,7 +9,8 @@ function searchWeather() {
     if (CITY_NAME.length  === 0) {
         return alert("Please enter a city name");
     }
-    const API_KEY = "API_KEY_NEEDED";
+    const params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+    const API_KEY = params["weather_api"] || params["api"];
     ELEMENTS.ELEMENT_LOADING_TEXT.style.display = 'block';
     ELEMENTS.ELEMENT_WEATHER_BOX.style.display = 'none';
     const URL = `http://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${API_KEY}`;

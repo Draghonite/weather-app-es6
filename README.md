@@ -7,7 +7,7 @@
 - Node.js (Express.js and Browser-Sync)
 - Git/GitHub
 
-NOTE: Requires an API key from openweathermap.org
+NOTE: Requires an API key from openweathermap.org; expected as a query-string parameter of 'weather_api' OR 'api'.
 
 
 Thanks to:
