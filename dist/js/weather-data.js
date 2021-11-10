@@ -3,6 +3,7 @@ class WeatherData {
         this.cityName = cityName;
         this.description = description;
         this.temperature = '';
+        this.timestamp = Date.now();
     }
 }
 
